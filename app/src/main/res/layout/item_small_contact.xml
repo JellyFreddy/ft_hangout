@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baby_blue"
+    android:paddingBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        android:id="@+id/photo_cardview"
+        app:cardCornerRadius="100dp"
+        android:layout_centerHorizontal="true"
+        android:thicknessRatio="7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/profile_photo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_add_contact" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anny Yeitesssssssssssssssss"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxEms="9"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintStart_toEndOf="@id/photo_cardview"
+        app:layout_constraintTop_toTopOf="@id/photo_cardview"
+        app:layout_constraintBottom_toBottomOf="@id/photo_cardview"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <ImageView
+        android:id="@+id/just_an_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toTopOf="@id/photo_cardview"
+        app:layout_constraintBottom_toBottomOf="@id/photo_cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ft_hangouts</string>
+    <string name="phone_number_et_hint_text">phone number</string>
+    <string name="name_et_hint_text">name</string>
+    <string name="address_et_hint_text">address</string>
+    <string name="date_of_birth_et_hint_text">date of birth</string>
+    <string name="accept_btn_text">accept</string>
+    <string name="new_contact">unknown contact</string>
+    <string name="send_message_hint">new message</string>
+    <string name="contacts_list_fragment_label">contacts list</string>
+    <string name="create_contact__fragment_label">contact</string>
+    <string name="chat_fragment_label">chat</string>
+    <string name="settings">Settings</string>
+    <string name="change_color_btn_text">change color</string>
+    <string name="send_btn_text">send</string>
+    <string name="deletion_message">Successfully deleted contact</string>
+    <string name="undo_deletion_message">Undo</string>
+</resources>

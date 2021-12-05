@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contactsListFragment">
+
+    <fragment
+        android:id="@+id/contactsListFragment"
+        android:name="com.example.ft_hangouts.ui.ContactsListFragment"
+        android:label="@string/contacts_list_fragment_label">
+        <action
+            android:id="@+id/action_contactsListFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment"
+            app:enterAnim="@anim/slidein_right"
+            app:exitAnim="@anim/slideout_left"
+            app:popEnterAnim="@anim/slidein_left"
+            app:popExitAnim="@anim/slideout_right" />
+        <action
+            android:id="@+id/action_contactsListFragment_to_createContactFragment"
+            app:destination="@id/createContactFragment"
+            app:enterAnim="@anim/slidein_right"
+            app:exitAnim="@anim/slideout_left"
+            app:popEnterAnim="@anim/slidein_left"
+            app:popExitAnim="@anim/slideout_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.example.ft_hangouts.ui.ChatsFragment"
+        android:label="{name}">
+        <argument
+            android:name="contactNumber"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createContactFragment"
+        android:name="com.example.ft_hangouts.ui.CreateOrModifyContactFragment"
+        android:label="{name}">
+        <argument
+            android:name="contact"
+            android:defaultValue="@null"
+            app:argType="com.example.ft_hangouts.models.Contact"
+            app:nullable="true" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ft_hangouts.ui.SettingsFragment"
+        android:label="@string/settings" />
+</navigation>

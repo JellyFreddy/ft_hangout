@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ft_hangouts</string>
+    <string name="phone_number_et_hint_text">номер телефона</string>
+    <string name="name_et_hint_text">имя</string>
+    <string name="address_et_hint_text">адрес</string>
+    <string name="date_of_birth_et_hint_text">дата рождения</string>
+    <string name="accept_btn_text">принять</string>
+    <string name="new_contact">неизвестный контакт</string>
+    <string name="send_message_hint">новое сообщение</string>
+    <string name="contacts_list_fragment_label">список контактов</string>
+    <string name="create_contact__fragment_label">контакт</string>
+    <string name="chat_fragment_label">чат</string>
+    <string name="settings">Настройки</string>
+    <string name="change_color_btn_text">изменить цвет</string>
+    <string name="send_btn_text">отправить</string>
+    <string name="deletion_message">контакт успешно удален</string>
+    <string name="undo_deletion_message">отменить</string>
+</resources>
